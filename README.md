@@ -1,7 +1,5 @@
 # rock-scissor-paper
 
-This is a game
-
 Sten sax påse
 
 Gör denna övning tills nästa måndag!
