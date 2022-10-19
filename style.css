@@ -18,22 +18,32 @@ body {
   background-color: var(--red);
   text-align: center;
   height: 100vh;
+  font-family: 'Orbitron', sans-serif;
 }
 
 header {
   background-color: var(--headerAndFooterColor);
   color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
   background-color: var(--headerAndFooterColor);
   color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game-name-text {
+  font-size: 50px;
 }
 
 /* MAIN */
 .the-game {
   display: grid;
-  grid-template-rows: 3rem auto 3rem;
+  grid-template-rows: 6rem auto 4rem;
   height: 100vh;
   color: var(--textColor);
   background-color: var(--backgroundColor);
@@ -41,12 +51,26 @@ footer {
 
 .user-button {
   margin: 0 0.5rem;
+  background-color: var(--headerAndFooterColor);
+  color: var(--yellow);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px black;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+}
+.user-button:hover {
+  background-color: #19343f;
+  box-shadow: 0 0 12px black;
 }
 
 .user-buttons {
   position: absolute;
-  border: 2px solid black;
-  bottom: 4rem;
+  bottom: 7rem;
   padding: 1rem;
   width: 100%;
+}
+.win-counter-text {
+  font-size: 25px;
 }
