@@ -5,6 +5,8 @@ let computerChoiceText = document.querySelector(".computer-choice-text");
 let userChoiceText = document.querySelector(".user-choice-text");
 let winOrLoseText = document.querySelector(".win-or-lose-text");
 let winCounterText = document.querySelector(".win-counter-text");
+let slider = document.querySelector(".slider");
+let playAgainBtn =document.querySelector(".play-again-btn");
 
 let computerRandomNumber = 0;
 let userNumber = 0;
@@ -15,11 +17,18 @@ function addOneWin() {
   winCounterText.innerText = `Wins: ${winCounter}`;
 }
 
+function toggleSlider() {
+  slider.classList.toggle("show");
+}
+playAgainBtn.addEventListener ('click', () => {
+toggleSlider();
+})
+
 rockButton.addEventListener("click", () => {
   userNumber = 1;
   computerRandomNumber = Math.floor(Math.random() * 3) + 1;
   userChoiceText.innerText = "User: Rock";
-
+  
   if (userNumber == computerRandomNumber) {
     computerChoiceText.innerText = "CP: Rock";
     winOrLoseText.innerText = "Draw!";
@@ -31,6 +40,7 @@ rockButton.addEventListener("click", () => {
     winOrLoseText.innerText = "You Win!";
     addOneWin();
   }
+  toggleSlider();
 });
 
 paperButton.addEventListener("click", () => {
@@ -49,6 +59,7 @@ paperButton.addEventListener("click", () => {
     computerChoiceText.innerText = "CP: Scissor";
     winOrLoseText.innerText = "You Lose!";
   }
+  toggleSlider();
 });
 
 scissorButton.addEventListener("click", () => {
@@ -67,4 +78,5 @@ scissorButton.addEventListener("click", () => {
     winOrLoseText.innerText = "You Win!";
     addOneWin();
   }
+  toggleSlider();
 });
