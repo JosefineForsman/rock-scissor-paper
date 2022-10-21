@@ -23,11 +23,6 @@ function addOneWin() {
 function toggleSlider() {
   slider.classList.toggle("show");
 }
-// HEAD
-// When play-again-button is clicked ~> Trigger toggleSlider().
-playAgainBtn.addEventListener ('click', () => {
-toggleSlider();
-})
 
 // When play-again-button is clicked ~> Trigger toggleSlider().
 playAgainBtn.addEventListener("click", () => {
