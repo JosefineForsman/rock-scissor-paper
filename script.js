@@ -1,12 +1,12 @@
 const rockButton = document.querySelector(".user-rock-btn");
 const paperButton = document.querySelector(".user-paper-btn");
 const scissorButton = document.querySelector(".user-scissor-btn");
-let computerChoiceText = document.querySelector(".computer-choice-text");
-let userChoiceText = document.querySelector(".user-choice-text");
-let winOrLoseText = document.querySelector(".win-or-lose-text");
-let winCounterText = document.querySelector(".win-counter-text");
-let slider = document.querySelector(".slider");
-let playAgainBtn =document.querySelector(".play-again-btn");
+const computerChoiceText = document.querySelector(".computer-choice-text");
+const userChoiceText = document.querySelector(".user-choice-text");
+const winOrLoseText = document.querySelector(".win-or-lose-text");
+const winCounterText = document.querySelector(".win-counter-text");
+const slider = document.querySelector(".slider");
+const playAgainBtn = document.querySelector(".play-again-btn");
 
 let computerRandomNumber = 0;  // Computer Score.
 let userNumber = 0;// 1 = Rock | 2 = Paper | 3 = Scissor.
@@ -17,21 +17,29 @@ function addOneWin() {
   winCounter++;
   winCounterText.innerText = `Wins: ${winCounter}`;
 }
+//HEAD
+
 // This function only toggle the slider to go back and fourth.
 function toggleSlider() {
   slider.classList.toggle("show");
 }
+// HEAD
 // When play-again-button is clicked ~> Trigger toggleSlider().
 playAgainBtn.addEventListener ('click', () => {
 toggleSlider();
 })
+
+// When play-again-button is clicked ~> Trigger toggleSlider().
+playAgainBtn.addEventListener("click", () => {
+  toggleSlider();
+});
 
 // What happends if we choose Rock?
 rockButton.addEventListener("click", () => {
   userNumber = 1;
   computerRandomNumber = Math.floor(Math.random() * 3) + 1;
   userChoiceText.innerText = "User: Rock";
-  
+
   if (userNumber == computerRandomNumber) {
     computerChoiceText.innerText = "CP: Rock";
     winOrLoseText.innerText = "Draw!";
