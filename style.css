@@ -4,8 +4,7 @@
   --headerAndFooterColor: #264653;
   --textColor: #15514a;
   --yellow: #e9c46a;
-  --orange: #f4a261;
-  --red: #e76f51;
+  --red: #2a9d8f;
 }
 
 * {
@@ -19,6 +18,7 @@ body {
   text-align: center;
   height: 100vh;
   font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
 }
 
 header {
@@ -27,6 +27,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 15px #264653;
 }
 
 footer {
@@ -35,6 +36,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 15px #264653;
 }
 .game-name-text {
   font-size: 50px;
@@ -65,6 +67,10 @@ footer {
 .slider p {
   color: var(--yellow);
   font-size: 20px;
+  width: 25%;
+  background-color:#0d252f;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 /* MAIN */
@@ -85,10 +91,16 @@ footer {
   box-shadow: 0 0 8px black;
   cursor: pointer;
   font-family: 'Orbitron', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
+  width: 33%;
 }
 .play-again-btn{
 font-size: 20px;
+width: 25%;
+}
+.play-again-btn:hover {
+  box-shadow: 0 0 12px var(--red);
+  background-color: #19343f;
 }
 .user-button:hover {
   background-color: #19343f;
@@ -96,11 +108,23 @@ font-size: 20px;
 }
 
 .user-buttons {
-  position: absolute;
-  bottom: 7rem;
-  padding: 1rem;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
 }
 .win-counter-text {
   font-size: 25px;
+}
+@media (max-width: 650px) {
+  .game-name-text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .user-button {
+    width: 53%;
+  }
 }
