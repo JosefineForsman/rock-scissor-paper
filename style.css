@@ -2,7 +2,7 @@
   --headerAndFooterColor: #264653;
   --textColor: #15514a;
   --yellow: #e9c46a;
-  --red: #2a9d8f;
+  --turquoise: #2a9d8f;
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: var(--red);
+  background-color: var(--turquoise);
   text-align: center;
   height: 100vh;
   font-family: 'Orbitron', sans-serif;
@@ -98,7 +98,7 @@ font-size: 20px;
 width: 25%;
 }
 .play-again-btn:hover {
-  box-shadow: 0 0 12px var(--red);
+  box-shadow: 0 0 12px var(--turquoise);
   background-color: #19343f;
   font-family: "Orbitron", sans-serif;
   font-size: 25px;
