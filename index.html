@@ -10,47 +10,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissor...</title>
     <script
       src="https://kit.fontawesome.com/90fae742c0.js"
       crossorigin="anonymous"
     ></script>
+    <title>Rock Paper Scissor...</title>
+    <!-- CSS + JS -->
     <link rel="stylesheet" href="/style.css" />
     <script defer src="/script.js"></script>
   </head>
   <body>
-    <div class="the-game">
-      <header>
-        <h1 class="game-name-text">Rock Scissor Paper</h1>
-      </header>
-      <main>
-        <content class="slider">
-          <p class="user-choice-text">PLACEHOLDER TEXT</p>
-          <p class="computer-choice-text">PLACEHOLDER TEXT</p>
-          <p class="win-or-lose-text">PLACEHOLDER TEXT</p>
-          <button class="play-again-btn">Play Again?</button>
-        </content>
-        <div class="user-buttons">
-          <button class="user-button user-rock-btn">
-            <i class="fa-regular fa-hand-back-fist"></i>
-            ROCK
-            <i class="fa-regular fa-hand-back-fist"></i>
-          </button>
-          <button class="user-button user-paper-btn">
-            <i class="fa-regular fa-hand"></i>
-            PAPER
-            <i class="fa-regular fa-hand"></i>
-          </button>
-          <button class="user-button user-scissor-btn">
-            <i class="fa-regular fa-hand-scissors"></i>
-            SCISSOR
-            <i class="fa-regular fa-hand-scissors"></i>
-          </button>
-        </div>
-      </main>
-      <footer>
-        <p class="win-counter-text">Wins: 0</p>
-      </footer>
-    </div>
+    <header>
+      <h1>Rock Paper Scissor</h1>
+      <p>- Mobile Version -</p>
+    </header>
+    <content class="slider">
+      <p class="user-choice-text">PLACEHOLDER TEXT</p>
+      <p class="computer-choice-text">PLACEHOLDER TEXT</p>
+      <p class="win-or-lose-text">PLACEHOLDER TEXT</p>
+      <button class="play-again-btn">Play Again?</button>
+    </content>
+    <!-- <i> is only for the hand symbol -->
+    <main class="user-btns">
+      <!-- ROCK BUTTON -->
+      <button class="user-btn user-rock-btn">
+        ROCK
+        <i class="fa-regular fa-hand-back-fist"></i>
+      </button>
+
+      <!-- PAPER BUTTON -->
+      <button class="user-btn user-paper-btn">
+        PAPER
+        <i class="fa-regular fa-hand"></i>
+      </button>
+
+      <!-- SCISSOR BUTTON -->
+      <button class="user-btn user-scissor-btn">
+        SCISSOR
+        <i class="fa-regular fa-hand-scissors"></i>
+      </button>
+    </main>
+    <footer>
+      <p>Wins: 0</p>
+    </footer>
   </body>
 </html>
